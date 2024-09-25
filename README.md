@@ -1,81 +1,75 @@
 # TomarketBot
 🖱️ clicker for [https://t.me/Tomarket_ai_bot](https://t.me/Tomarket_ai_bot/app?startapp=000079hx)
 
+## Recommendation before use
+# 🔥🔥 Use PYTHON 3.10 🔥🔥
 
-## Functionality
-| Functional                                                                      | Supported |
-|----------------------------------------------------------------|:---------:|
-| Auto Claim                                                     |     ✅     |
-| Auto Play Game                                                 |     ✅     |
-| Suppport Multi Account                                         |     ✅     |
-| Proxy Support                                                  |     ✅     |
-
-# Warning !
-According to [Telegram TOS](https://core.telegram.org/api/obtaining_api_id#using-the-api-id) all accounts that sign up or log in using unofficial Telegram API clients are automatically put under observation to avoid violations of the Terms of Service.
-
-So be careful, hopefully your account won't get banned.
-
-
-## Settings data file
-| Setting                      | Description                                                                                    |
-|------------------------------|------------------------------------------------------------------------------------------------|
-| query_id        | fill the `data.txt` file with your data, how to get data you can refer to [How to Get Data](#how-to-get-data)                      |
+## Features
+|                               Feature                                | Supported |
+|:-------------------------------------------------------------------:|:---------:|
+|                           Multithreading                            |     ✅     |
+|                    Proxy binding to session                         |     ✅     |
+|                 Auto Referral of your accounts                      |     ✅     |
+|                    Automatic task completion                        |     ✅     |
+|                  Support for pyrogram .session                      |     ✅     |
+|                           Auto farming                              |     ✅     |
+|                    Automatic quest completion                       |     ✅     |
+|                      Auto Daily Reward                              |     ✅     |
+|                       Auto Claim Stars                              |     ✅     |
+|                       Auto Claim Combo                              |     ✅     |
+|       Auto Rank Upgrade        |     ✅     |
 
 
+## [Settings](https://github.com/sizifart/TomarketBot/blob/main/.env-example/)
+|        Settings         |                                      Description                                       |
+|:-----------------------:|:--------------------------------------------------------------------------------------:|
+|  **API_ID**             |        Your Telegram API ID (integer)                                                  |
+|  **API_HASH**           |        Your Telegram API Hash (string)                                                 |
+|  **REF_ID**             |        Your referral id after startapp=                             |
+| **POINTS_COUNT**        | Number of points per game (e.g., [450, 600]) |
+|  **FAKE_USERAGENT**     |        Use a fake user agent for sessions (True / False)                               |
+|  **AUTO_PLAY_GAME**     |        Automatically play games (True / False)                                         |
+|  **AUTO_TASK**          |        Automatically complete tasks (True / False)                                     |
+|  **AUTO_DAILY_REWARD**  |        Automatically claim daily rewards (True / False)                                |
+|  **AUTO_CLAIM_STARS**  |        Automatically claim star rewards (True / False)                                 |
+|  **AUTO_CLAIM_COMBO**   |        Automatically claim combo rewards (True / False)                                |
+|    **AUTO_RANK_UPGRADE**    |                  Automatically upgrade rank (True / False)                   |
+| **USE_RANDOM_DELAY_IN_RUN** | Whether to use random delay at startup (True / False)                              |
+| **RANDOM_DELAY_IN_RUN** |        Random delay at startup (e.g. [0, 15])                                          |
+| **USE_PROXY_FROM_FILE** |        Whether to use a proxy from the `bot/config/proxies.txt` file (True / False)    |
 
+## Prerequisites
+Before you begin, make sure you have the following installed:
+- [Python](https://www.python.org/downloads/) **version 3.10**
+- Telegram API_ID and API_HASH (you can get them [here](https://my.telegram.org/auth))
 
-## Requirements
-- Python 3.9 (you can install it [here](https://www.python.org/downloads/release/python-390/)) 
-- How to Get Data (you can get them [here](#how-to-get-data))
-  
+## Obtaining API Keys
+1. Go to my.telegram.org and log in using your phone number.
+2. Select "API development tools" and fill out the form to register a new application.
+3. Record the API_ID and API_HASH provided after registering your application in the .env file.
+
 ## Auto Install/Run
-- Click on Install.bat to automatically install the required dependencies 
-- Then click on START.bat to run the project
+- Click on RUN.bat to automatically install the required dependencies and run the project
 
 ## Menual Install/Run
 1. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
    ```
+2. Please edit the name file .env-example to .env and add your API_ID and API_HASH:
    
 ## Usage
 1. Run the bot:
    ```bash
-   python bot.py
+   python main.py
    ```
-
-# How to Get Data
-   
-   1. Active web inspecting in telegram app
-   2. Goto bot and open the apps
-   3. Press `F12` on your keyboard to open devtool or right click on app and select `Inspect`
-   4. Goto `console` menu and copy [javascript code](#javascript-command-to-get-telegram-data-for-desktop) then paste on `console` menu
-   5. If you don't receive error message, it means you successfully copy telegram data then paste on `data.txt` (1 line for 1 telegram data)
-   
-   Example telegram data
-
-   ```
-   user=xxxxxxfirst_namexxxxxlast_namexxxxxxxusernamexxxxxxxlanguage_codexxxxxxxallows_write_to_pmxxxxxxx&auth_date=xxxxxx&hash=xxxxxxxxxxxxxxxxxxxxx
-   ```
-
-   6. If you want to add more account. Just paste telegram second account data in line number 2.
-   
-   Maybe like this sample in below
-
-   ```
-   1.user=xxxxxxfirst_namexxxxxlast_namexxxxxxxusernamexxxxxxxlanguage_codexxxxxxxallows_write_to_pmxxxxxxx&auth_date=xxxxxx&hash=xxxxxxxxxxxxxxxxxxxxx
-   2.user=xxxxxxfirst_namexxxxxlast_namexxxxxxxusernamexxxxxxxlanguage_codexxxxxxxallows_write_to_pmxxxxxxx&auth_date=xxxxxx&hash=xxxxxxxxxxxxxxxxxxxxx
-   ```
-
-# Javascript Command to Get Telegram Data for Desktop
-
-```javascript
-copy(Telegram.WebApp.initData)
-```
  
 # Telegram Channel
 
 ✅ Channel for information and training on Telegram airdrop bots 🔷 Follow us on Telegram : [SIZIFAIRDROP](https://t.me/sizifairdrop)
+
+# Donate
+Your donations help us continue our work. Thank you for your support! | 💳 [Donate](https://sizvpn.com/donate/)  
 
 # Discussion
 
